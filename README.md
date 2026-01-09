@@ -1,6 +1,6 @@
 # Code and data for our paper Automatic Metrical Scansion of Galician Poetry: First Results
 
-The system is in `src`. From there `run_prepro.py` runs preprocessing and `run_scan_eval.py` runs scansion.
+The system is in `src`. From there `run_prepro.py` runs preprocessing and `run_scan_eval.py` runs scansion. The  `-h` option in both cases shows available options, and the instructions to reproduce results below show examples how to use the tool.
 
 For peer review, we share the procedure and data to reproduce results on the paper's evaluation data (test set). This is for peer review only, not for redistribution. We will publicly distribute both test data and the larger development data upon publication.
 
