@@ -1,5 +1,7 @@
 # Code and data for our paper Automatic Metrical Scansion of Galician Poetry: First Results
 
+The system is in `src`. From there `run_prepro.py` runs preprocessing and `run_scan_eval.py` runs scansion.
+
 For peer review, we share the procedure and data to reproduce results on the paper's evaluation data (test set). This is for peer review only, not for redistribution. We will publicly distribute both test data and the larger development data upon publication.
 
 To reproduce, large files that don't fit anonymous.4open.science would need to be downloaded. The following command downloads them to the required directory:
