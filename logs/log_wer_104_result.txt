@@ -1,0 +1,2 @@
+WER: 0.004187385501177702
+Lines with mismatch: 14
