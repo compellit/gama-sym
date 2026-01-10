@@ -1,6 +1,11 @@
 # Test-set format
 
-It contains the following information (whether in the .tsv or .xlsx version):
+The .tsv version is for stress match and meter match and only shows the line, its stress pattern and its meter.
+- Original poem text before preprocessing
+- Number metrical syllables
+- Stress patterns
+
+The .xlsx version contains poem metadata (allows to lines for a single poem before running scansion). It also has syllabification information (lexical and metrical) and metaplasm annotations:
 - Original poem text before preprocessing
 - Preprocessed text (the one scansion was run on)
 - Lexical syllabification
