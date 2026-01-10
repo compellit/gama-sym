@@ -5,7 +5,7 @@ The .tsv version is for stress match and meter match and only shows the line, it
 - Number metrical syllables
 - Stress patterns
 
-The .xlsx version contains poem metadata (allows to lines for a single poem before running scansion). It also has syllabification information (lexical and metrical) and metaplasm annotations:
+The .xlsx version contains poem metadata (allows to group lines for a single poem before running scansion). It also has syllabification information (lexical and metrical) and metaplasm annotations:
 - Original poem text before preprocessing
 - Preprocessed text (the one scansion was run on)
 - Lexical syllabification
