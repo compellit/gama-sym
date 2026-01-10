@@ -69,7 +69,7 @@ This will output the scores to `out/scansion_gl_cumu_acc.tsv`, which reproduce t
 To reproduce **Table 2 with detailed results per metrical difficulty type**, run the following command from `src`:
 
 ```bash
-%run scansion/eval/eval_line_types.py --gold "scansion/eval/data/gl_scansion_gold_test_md_010.xlsx" --predicted "../out/scansion_gl_eval_202.tsv" --testset_start_index 0 --result_format 'gumper' --log "../logs/log_met_details.txt" --run_id 202 --batch_comment "repro detailed eval 202" --model "Gumper" --eval_suffix ""
+python scansion/eval/eval_line_types.py --gold "scansion/eval/data/gl_scansion_gold_test_md_010.xlsx" --predicted "../out/scansion_gl_eval_202.tsv" --testset_start_index 0 --result_format 'gumper' --log "../logs/log_met_details.txt" --run_id 202 --batch_comment "repro detailed eval 202" --model "Gumper" --eval_suffix ""
 ```
 
 That will write the summary of results for the `test` part of Table 2 to `logs/log_met_details.txt`, based on the evaluation at `out/scansion_gl_eval_202.annot.tsv`.
