@@ -287,11 +287,8 @@ def _resyllabify_double_l(sl: list) -> list:
     sl_copy = copy(sl)
     for idx, sy in enumerate(sl):
         try:
-            # I'm not sure why did it this way (back in 2017). 
-            # From the rgx, what seems to be happening is that 
-            # the first "syllable" is just a single "l", perhaps
-            # there were missyllabifications with such (incorrect) "syllables"
-            # and this function was meant to fix them.
+            # Fix missyllabification cases where a single "l" is output
+            # as a syllable
             if (re.match(r"^l$", sy.lower())
                 and sl[idx+1][0].lower() == "l"):
                 sl_copy[idx+1] = "".join((sl[idx][-1], sl[idx+1]))
