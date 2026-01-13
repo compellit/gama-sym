@@ -8,7 +8,7 @@ from typing import Literal
 
 import pandas as pd
 
-from scansion import utils as ut
+from .. import utils as ut
 
 # regex patterns for metadata extraction
 COMPLEX_SYNALEPHA_RE = re.compile(r"(?:_[\p{L}+]_)+")
