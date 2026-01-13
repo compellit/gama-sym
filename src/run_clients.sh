@@ -3,8 +3,10 @@ set -euo pipefail
 
 usage() {
   cat <<'USAGE'
+Runs preprocessing and scansion on a text.
+
 Usage:
-  script.sh -r <run_id> [-p <path_to_poem_file>]
+  run_client.sh -r <run_id> [-p <path_to_poem_file>]
 
 Options:
   -r   Run ID (required). Creates ../texts/run_<run_id>

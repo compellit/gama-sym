@@ -18,10 +18,10 @@ Then the system can be run and reproduces the paper.
 
 ## Example
 
-To get an example output, you can run `run_example.sh` (from `src`, and must be executable). This runs preprocessing and scansion with the same options used for the paper. There is an example poem in the script already, but you can pass a file with your own using the `-p` flag before its path). The command (using the poem already in the script) is: 
+To get an example output, you can run `run_clients.sh` (from `src`, script must be executable). This runs preprocessing and scansion with the same options used for the paper. There is an example poem in the script already, but you can pass a file with your own using the `-p` flag before its path). The command (using the poem already in the script) is: 
 
 ```bash
-./run_example.sh -r 300 
+./run_clients.sh -r 300 
 ```
 
 This will create a directory called `../texts/run_300/` with the poem at `../texts/run_300/example_001.txt`. Preprocessing output will be in `../texts/run_300/out_300` and scansion output will be at `../texts/run_300/out_300/scansion_output_300.tsv`. The value of `-r` is a run-ID. 
@@ -29,7 +29,7 @@ This will create a directory called `../texts/run_300/` with the poem at `../tex
 To run with your own poem (here at path `../texts/example_input_poem.txt`, the command would be:
 
 ```bash
-./run_example.sh -r 301 -p ../texts/example_input_poem.txt
+./run_clients.sh -r 301 -p ../texts/example_input_poem.txt
 ```
 
 ## To reproduce the paper
