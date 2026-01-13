@@ -1,10 +1,14 @@
 # Code and data for our paper Automatic Metrical Scansion of Galician Poetry: First Results
 
+## Introduction
+
 The system is in `src`. From there `run_prepro.py` runs preprocessing and `run_scan_eval.py` runs scansion. The  `-h` option in both cases shows available options, and the instructions to reproduce results below show examples how to use the tool.
 
 For peer review, we share the procedure and data to reproduce results on the paper's evaluation data (test set). This is for peer review only, not for redistribution. We will publicly distribute both test data and the larger development data upon publication.
 
-To reproduce, large files that don't fit anonymous.4open.science would need to be downloaded. The following command downloads them to the required directory:
+Required packages are in [`requirements.txt`](./requirements.txt). 
+
+To run the system, large files that don't fit anonymous.4open.science would need to be downloaded. The following command downloads them to the required directory (script must be executable):
 
 ```bash
 ./download_large_files.sh
@@ -12,8 +16,25 @@ To reproduce, large files that don't fit anonymous.4open.science would need to b
 
 Then the system can be run and reproduces the paper. 
 
+## Example
 
-## Preprocessing
+To get an example output, you can run `run_example.sh` (from `src`, and must be executable). This runs preprocessing and scansion with the same options used for the paper. There is an example poem in the script already, but you can pass a file with your own using the `-p` flag before its path). The command (using the poem already in the script) is: 
+
+```bash
+./run_example.sh -b 300 
+```
+
+This will create a directory called `../texts/run_300/` with the poem at `../texts/run_300/example_001.txt`. Preprocessing output will be in `../texts/run_300/out_300` and scansion output will be at `../texts/run_300/out_300/scansion_output_300.tsv`.
+
+To run with your own poem (here at path `../texts/example_input_poem.txt`, the command would be:
+
+```bash
+./run_example.sh -r 301 -p ../texts/example_input_poem.txt
+```
+
+## To reproduce the paper
+
+### Preprocessing
 
 To reproduce preprocessing results, go to the `src` directory and run the following:
 
@@ -23,7 +44,7 @@ python run_prepro.py "../texts/gl_poems_test_010.txt" --preprocess --normalize -
 
 That will output the results in `texts/out_104/`. The output file should reproduce `texts/out_103/gl_poems_test_010_pp_out_norm_spa_103.txt`
 
-### Preprocessing evaluation
+#### Preprocessing evaluation
 
 To reproduce preprocessing evaluation:
 
@@ -33,7 +54,7 @@ Go to the `src/preprocessing/eval` directory and run the evaluation with the com
 python eval_prepro.py --hypothesis "../../../texts/out_104/gl_poems_test_010_pp_out_norm_spa_104.txt" --reference "../../../texts/out_103/gl_poems_test_010_pp_out_norm_spa_103_corrected_to_compute_wer.txt"
 ```
 
-## Scansion results and evaluation
+### Scansion results and evaluation
 
 To reproduce **scansion results (Table 1)**, on the test set:
 
@@ -51,7 +72,7 @@ This will output the scores to `out/scansion_gl_cumu_acc.tsv`, which reproduce t
 python run_scan_eval.py "../texts/gl_poems_test_010.txt" "scansion/eval/data/gl_scansion_gold_test_010.tsv" 201 --skip_cleanup --metadata_path "scansion/eval/data/gl_scansion_gold_test_md_010.xlsx" --metadata_start 0 --run_comment "Repro scansion config (2)"
 ```
 
-This will output the scores to `out/scansion_gl_cumu_acc.tsv`, which reproduce those in the paper. The scansion output will be at `out/scansion_gl_eval_201.tsv`.
+This will output the scores to `../out/scansion_gl_cumu_acc.tsv`, which reproduce those in the paper. The scansion output will be at `../out/scansion_gl_eval_201.tsv`.
 
 
 **(3): + Galician lexical resources + Preprocessing**
@@ -64,16 +85,16 @@ python run_scan_eval.py "../texts/out_103/gl_poems_test_010_pp_out_norm_spa_103.
 
 This will output the scores to `out/scansion_gl_cumu_acc.tsv`, which reproduce those in the paper. The scansion output will be at `out/scansion_gl_eval_202.tsv`.
 
-### Detailed results per metrical difficulty type
+#### Detailed results per metrical difficulty type
 
 To reproduce **Table 2 with detailed results per metrical difficulty type**, run the following command from `src`:
 
 ```bash
-python scansion/eval/eval_line_types.py --gold "scansion/eval/data/gl_scansion_gold_test_md_010.xlsx" --predicted "../out/scansion_gl_eval_202.tsv" --testset_start_index 0 --result_format 'gumper' --log "../logs/log_met_details.txt" --run_id 202 --batch_comment "repro detailed eval 202" --model "Gumper" --eval_suffix ""
+python -m scansion.eval.eval_line_types --gold "scansion/eval/data/gl_scansion_gold_test_md_010.xlsx" --predicted "../out/scansion_gl_eval_202.tsv" --testset_start_index 0 --result_format 'gumper' --log "../logs/log_met_details.txt" --run_id 202 --batch_comment "repro detailed eval 202" --model "Gumper" --eval_suffix ""
 ```
 
 That will write the summary of results for the `test` part of Table 2 to `logs/log_met_details.txt`, based on the evaluation at `out/scansion_gl_eval_202.annot.tsv`.
 
-### Per-meter results
+#### Per-meter results
 
 These are in **Appendix F, table 7**. They can be reproduced by running the notebook at `src/scansion/ana/per-meter-results.ipynb`, which uses the detailed evaluation above.
