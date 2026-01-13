@@ -6,7 +6,7 @@ usage() {
 Runs preprocessing and scansion on a text.
 
 Usage:
-  run_client.sh -r <run_id> [-p <path_to_poem_file>]
+  run_clients.sh -r <run_id> [-p <path_to_poem_file>]
 
 Options:
   -r   Run ID (required). Creates ../texts/run_<run_id>
