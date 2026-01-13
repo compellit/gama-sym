@@ -44,7 +44,7 @@ python run_prepro.py "../texts/gl_poems_test_010.txt" --preprocess --normalize -
 
 That will output the results in `texts/out_104/`. The output file should reproduce `texts/out_103/gl_poems_test_010_pp_out_norm_spa_103.txt`
 
-#### Preprocessing evaluation
+### Preprocessing evaluation
 
 To reproduce preprocessing evaluation:
 
@@ -85,7 +85,7 @@ python run_scan_eval.py "../texts/out_103/gl_poems_test_010_pp_out_norm_spa_103.
 
 This will output the scores to `out/scansion_gl_cumu_acc.tsv`, which reproduce those in the paper. The scansion output will be at `out/scansion_gl_eval_202.tsv`.
 
-#### Detailed results per metrical difficulty type
+### Detailed results per metrical difficulty type
 
 To reproduce **Table 2 with detailed results per metrical difficulty type**, run the following command from `src`:
 
@@ -95,6 +95,6 @@ python -m scansion.eval.eval_line_types --gold "scansion/eval/data/gl_scansion_g
 
 That will write the summary of results for the `test` part of Table 2 to `logs/log_met_details.txt`, based on the evaluation at `out/scansion_gl_eval_202.annot.tsv`.
 
-#### Per-meter results
+### Per-meter results
 
 These are in **Appendix F, table 7**. They can be reproduced by running the notebook at `src/scansion/ana/per-meter-results.ipynb`, which uses the detailed evaluation above.
