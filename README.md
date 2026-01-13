@@ -2,7 +2,9 @@
 
 ## Introduction
 
-The system is in `src`. From there `run_prepro.py` runs preprocessing and `run_scan_eval.py` runs scansion. The  `-h` option in both cases shows available options, and the instructions to reproduce results below show examples how to use the tool.
+The system is in `src`. An example client that runs both preprocessing and scansion on text is at `src/run_clients.sh`.
+
+From `src`, `run_prepro.py` runs preprocessing and `run_scan_eval.py` runs scansion. The  `-h` option in both cases shows available options. The instructions to reproduce results below also show examples how to use the tool.
 
 For peer review, we share the procedure and data to reproduce results on the paper's evaluation data (test set). This is for peer review only, not for redistribution. We will publicly distribute both test data and the larger development data upon publication.
 
