@@ -1,10 +1,10 @@
-# Metrical annotation guidelines for Galician
+# Metrical annotation criteria for Galician
 
 ## Monosyllables and other items where there is variation regarding stress
 
-- **beira do**: We annotate it as unstressed: *beira do morto ninguén se achega* (Lamas Carvajal, "Á memoria do ilustre poeta gallego Francisco Añón")
-- **cada**: We annotate as unstressed, in a parallel to Spanish: TNT §168f "diferencias regionales con predominancia de forma átona" *cada día está más alto*
-- **indefinite article** "un", "unha": Stressed, following Carvalho Calero (CC) p. 74 "El artículo determinado es proclítico. El indeterminado es tónico". 
+- **"beira do"**: We annotate it as unstressed: *beira do morto ninguén se achega* (Lamas Carvajal, "Á memoria do ilustre poeta gallego Francisco Añón")
+- **"cada"**: We annotate as unstressed, in a parallel to Spanish: TNT §168f "diferencias regionales con predominancia de forma átona" *cada día está más alto*
+- **"indefinite article"** "un", "unha": Stressed, following Carvalho Calero (CC) p. 74 "El artículo determinado es proclítico. El indeterminado es tónico". 
 - **"logo que"**: CC p. 73 preposiciones y conjunciones generalmente proclíticas
 	- *logo que o paso apretei* (Añón, "O magosto")
 - **"máis"**: in **19th text**, it sometimes bears an accent mark whether it's an adverb or not, so the accent is not a reliable indicator of stress:
