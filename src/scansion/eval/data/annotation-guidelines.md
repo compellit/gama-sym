@@ -48,9 +48,11 @@
 
 (work in progress as more generalizations emerge)
 
-We annotate all metaplasms. When stress shifts because of metaplasms, we annotate stress in the metrically stressed syllable. We're not handling cases of rhythmic destressing/extra stressing, which remain a minority.
+We annotate these metaplasms: synalepha, dialepha, syneresis and dieresis. When stress shifts because of metaplasms, we annotate stress in the metrically stressed syllable. We're not handling cases of rhythmic destressing/extra stressing, which remain a minority.
 
-An example of the type of destressing we're not annotating is given in Caparrós' (2010) description of Spanish metrics, as a possible analysis for Bécquer's *yo soy ardiente / yo soy morena / yo soy el símbolo / de la pasión*. Here, to obtain a ternary rhythm, it would be possible to destress *soy* in all lines and add an extra stress to lexically unstressed preposition *de* in the last line.
+An example of the type of destressing we're not annotating is given in Caparrós' description of Spanish metrics, as a possible analysis for Bécquer's *yo soy ardiente / yo soy morena / yo soy el símbolo / de la pasión*. Here, to obtain a ternary rhythm, it would be possible to destress *soy* in all lines and add an extra stress to lexically unstressed preposition *de* in the last line.
+
+Other metaplasms occur in Galician (see RF), but they are represented orthographically, and metrical stress detection takes them into account based on the orthographic representation, so no extra annotation is needed. For instance, epenthesis in "voo" (flight) written as "voxo", to make it clear that two syllables are needed metrically, like in Pondal's *te leva o voxo constante*, or apheresis in Rosalía's *Ña muller, pilla esa roca*, where "miña" apperas as "ña". 
 
 ## References
 
@@ -59,4 +61,5 @@ An example of the type of destressing we're not annotating is given in Caparrós
 - CG2 = de Castro, Rosalía (1872). *Cantares Gallegos* \[2nd ed\]. Madrid: Leocadio López.
 - FN = de Castro, Rosalia (1880). *Follas Novas*. Habana: La Propaganda Literaria.
 - RAE átonas: https://www.rae.es/ortograf%C3%ADa/palabras-%C3%A1tonas
+- RF = Rodríguez Fer, C. (1991). *Arte literaria*. Edicións Xerais.
 - TNT = Navarro Tomás, T. (1991) \[25th ed\]. *Manual de pronunciacion española*. Madrid: CSIC.
