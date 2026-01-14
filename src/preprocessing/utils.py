@@ -141,7 +141,7 @@ def _disambiguate_syll_stress(tok: str, syl_list:list) -> str:
                     newdiph = re.sub(key, value, newdiph)
                 newtok = tok.replace(diph, newdiph)
     if newtok is not None and newtok != tok:
-        utils_logger.debug(f"Spanishfied: [{tok}] to [{newtok}] context [{"".join(syl_list)}]")
+        utils_logger.debug(f"Disamb Stress: [{tok}] to [{newtok}] context [{"".join(syl_list)}]")
         return newtok
     return tok
 

@@ -1,5 +1,7 @@
 ### PyChmGrl template
 
+logs/log_prepro_300.txt
+logs/log_prepro_301.txt
 src/preprocessing/data/nos-127.klm.bin
 src/preprocessing/data/vocab-es-aspell-expanded.txt.pkl
 src/preprocessing/data/vocab-gl-merged.pkl
