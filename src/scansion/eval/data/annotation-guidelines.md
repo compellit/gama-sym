@@ -25,7 +25,7 @@
 	- TNT §169 adverbs: *tan* is unstressed, *tal* is stressed, so is *el cual*
 - **"xunto de"**: We annotate as unstressed
 	- *xunto de min non virás* (Labarta, incipit "Soíño no mundo")
-	- *xunto dela os paxariños* (CG 2 - 60)
+	- *xunto dela os paxariños* (CG2 18-II, p. 95)
 	- *e xunt'òn outeiro* (Labarta, incipit "Soíño no mundo")
 
 ## Items that are stressed or not depending on part of speech
@@ -56,7 +56,7 @@ An example of the type of destressing we're not annotating is given in Caparrós
 
 - Caparrós = Domínguez Caparrós, A. (2010). *Métrica y Poética. Bases para la fundamentación de la métrica en la teoría literaria moderna*. Cátedra.
 - CC = Carballo Calero, R. (1966) *Gramática elemental del gallego común*. Vigo: Galaxia.
-- CG = de Castro, Rosalía (1863). *Cantares Gallegos*. Vigo: Compañel.
+- CG2 = de Castro, Rosalía (1872). *Cantares Gallegos* \[2nd ed\]. Madrid: Leocadio López.
 - FN = de Castro, Rosalia (1880). *Follas Novas*. Habana: La Propaganda Literaria.
 - RAE átonas: https://www.rae.es/ortograf%C3%ADa/palabras-%C3%A1tonas
 - TNT = Navarro Tomás, T. (1991) \[25th ed\]. *Manual de pronunciacion española*. Madrid: CSIC.
