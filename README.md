@@ -2,15 +2,15 @@
 
 ## Introduction
 
-The system is in `src`. An example client that runs both preprocessing and scansion on text is at `src/run_clients.sh`.
+The system is in `src`. An example client that runs both preprocessing and scansion on a text is at `src/run_clients.sh`.
 
-From `src`, `run_prepro.py` runs preprocessing and `run_scan_eval.py` runs scansion. The  `-h` option in both cases shows available options. The instructions to reproduce results below also show examples how to use the tool.
+From `src`, `run_prepro.py` runs preprocessing and `run_scan_eval.py` runs scansion. The  `-h` option shows available options. The instructions to reproduce results below also show examples how to use the tool.
 
-For peer review, we share the procedure and data to reproduce results on the paper's evaluation data (test set). This is for peer review only, not for redistribution. We will publicly distribute both test data and the larger development data upon publication.
+We share the paper's [evaluation](./src/scansion/data) data (test set) and the procedure to reproduce results, for peer review only. We will publicly distribute both test data and the larger development dataset once the work is accepted.
 
 Required packages are in [`requirements.txt`](./requirements.txt). 
 
-To run the system, large files that don't fit anonymous.4open.science would need to be downloaded. The following command downloads them to the required directory (script must be executable):
+To run the system, large files that don't fit `anonymous.4open.science` would need to be downloaded. The following command downloads them to the required directory (script must be executable):
 
 ```bash
 ./download_large_files.sh
@@ -20,7 +20,7 @@ Then the system can be run and reproduces the paper.
 
 ## Example
 
-To get an example output, you can run `run_clients.sh` (from `src`, script must be executable). This runs preprocessing and scansion with the same options used for the paper. There is an example poem in the script already, but you can pass a file with your own using the `-p` flag before its path). The command (using the poem already in the script) is: 
+To get an example output, you can run `run_clients.sh` (from `src`, script must be executable). This runs preprocessing and scansion with the same options used for the paper. There is an example poem in the script already, but you can pass a file with your own text using the `-p` flag. The command (using the poem already in the script) is: 
 
 ```bash
 ./run_clients.sh -r 300 
@@ -28,7 +28,7 @@ To get an example output, you can run `run_clients.sh` (from `src`, script must 
 
 This will create a directory called `../texts/run_300/` with the poem at `../texts/run_300/example_001.txt`. Preprocessing output will be in `../texts/run_300/out_300` and scansion output will be at `../texts/run_300/out_300/scansion_output_300.tsv`. The value of `-r` is a run-ID. 
 
-To run with your own poem (here at path `../texts/example_input_poem.txt`, the command would be:
+To run with your own poem (here at path `../texts/example_input_poem.txt`, the command would be (using 301 as a run ID):
 
 ```bash
 ./run_clients.sh -r 301 -p ../texts/example_input_poem.txt
@@ -77,7 +77,7 @@ python run_scan_eval.py "../texts/gl_poems_test_010.txt" "scansion/eval/data/gl_
 This will output the scores to `../out/scansion_gl_cumu_acc.tsv`, which reproduce those in the paper. The scansion output will be at `../out/scansion_gl_eval_201.tsv`.
 
 
-**(3): + Galician lexical resources + Preprocessing**
+**(3): + Galician lexical resources + Preprocessing (Best results)**
 
 For this, we use the preprocessed text as input:
 

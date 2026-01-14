@@ -47,24 +47,17 @@
 
 - "Núbraseme o corazón", (FN): Tagged 1 7, but 1 4 7 seems more natural rhythmically speaking
 
-
 ## General criteria
 
 (work in progress)
 
-We generally don't move far from lexical stresses and we're not handling cases of metrical destressing/extra stressing, which remain a minority:
-  - An example of destressing is given in Caparrós, as a possible analysis for *yo soy ardiente / yo soy morena / yo soy el símbolo / de la pasión* destressing *soy* and extra stressing *de* to get a ternary rhythm.
-  - This becomes too subjective (you need two annotators and a good agreement), and you can't really trace it back to orthographic stress. To evaluate a rule-based tool it is problematic. 
+We annotate all metaplasms. Beyond stress shifts motivated by metaplasms, we're not handling cases of rhythmic destressing/extra stressing, which remain a minority.
 
-Only exception is as needed by acento estrófico:
-
-```
-Non toleo cando -> *Non / to- / *le- / o / *can-# / do
-```
-You need a metrical stress on \*can-do (even if it is an unstressed conjunction), because you can't have acento estrófico on *toleo*, so far from the line end. Besides, if you read this pausing at the line end ("without enjambment"), you need the stress there for reading.
+An example of the type of destressing we're not annotating is given in Caparrós' (2010) description of Spanish metrics, as a possible analysis for Bécquer's *yo soy ardiente / yo soy morena / yo soy el símbolo / de la pasión*. Here, to obtain a ternary rhythm, it would be possible to destress *soy* in all lines and add an extra stress to lexically unstressed preposition *de* in the last line.
 
 ## References
 
+- Caparrós, A. (2010). *Métrica y Poética. Bases para la fundamentación de la métrica en la teoría literaria moderna*. Cátedra.
 - CC = Gram Gallego común by Carballo Calero
 - CG = Cantares Gallegos
 - FN = Follas Novas

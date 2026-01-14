@@ -6,6 +6,7 @@ src/preprocessing/data/vocab-gl-merged.pkl
 src/preprocessing/data/vocab-gl-merged.txt
 texts/run_300
 texts/run_301
+texts/run_400
 
 # personal excludes
 wk/
