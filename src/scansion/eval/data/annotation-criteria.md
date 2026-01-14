@@ -56,7 +56,7 @@ Other metaplasms occur in Galician (see RF), but they are represented orthograph
 
 ## References
 
-- Caparrós = Domínguez Caparrós, A. (2010). *Métrica y Poética. Bases para la fundamentación de la métrica en la teoría literaria moderna*. Madrid: UNED.
+- Caparrós = Domínguez Caparrós, J. (2010). *Métrica y Poética. Bases para la fundamentación de la métrica en la teoría literaria moderna*. Madrid: UNED.
 - CC = Carballo Calero, R. (1966) *Gramática elemental del gallego común*. Vigo: Galaxia.
 - CG2 = de Castro, Rosalía (1872). *Cantares Gallegos* \[2nd ed\]. Madrid: Leocadio López.
 - FN = de Castro, Rosalia (1880). *Follas Novas*. Habana: La Propaganda Literaria.
