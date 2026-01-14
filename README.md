@@ -6,7 +6,7 @@ The system is in `src`. An example client that runs both preprocessing and scans
 
 From `src`, `run_prepro.py` runs preprocessing and `run_scan_eval.py` runs scansion. The  `-h` option shows available options. The instructions to reproduce results below also show examples how to use the tool.
 
-We share the paper's [evaluation](./src/scansion/data) data (test set) and the procedure to reproduce results, for peer review only. We will publicly distribute both test data and the larger development dataset once the work is accepted.
+We share the paper's [evaluation](./src/scansion/data/README.md) data (test set) and the procedure to reproduce results, for peer review only. We will publicly distribute both test data and the larger development dataset once the work is accepted.
 
 Required packages are in [`requirements.txt`](./requirements.txt). 
 
