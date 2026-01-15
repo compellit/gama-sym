@@ -1,11 +1,11 @@
 # Test-set format
 
-The .tsv version is for evaluating stress match and meter match only, showing each line, its stress pattern and its meter.
+File `gl_scansion_gold_test_010.tsv` is for evaluating stress match and meter match only, showing each line, its stress pattern and its meter.
 - Original poem text before preprocessing
 - Number of metrical syllables
 - Stress patterns
 
-The .xlsx version contains syllabification information (lexical and metrical), metaplasm annotations and poem metadata:
+File `gl_scansion_gold_test_md_010.xlsx` (also available as `gl_scansion_gold_test_md_010.tsv`) contains syllabification information (lexical and metrical), metaplasm annotations and poem metadata:
 - Original poem text before preprocessing
 - Preprocessed text (the one scansion was run on)
 - Lexical syllabification
