@@ -13,7 +13,7 @@ Adapted from José A. Mañas in Communications of the ACM 30(7), 1987.
 
 Initial Python implementation (for Spanish) by Javier Sober
 
-Current modifications by Pablo Ruiz.
+Current modifications by <anonymized>.
 Some added fixes: Resyllabification for some issues found when processing.
 """
 
