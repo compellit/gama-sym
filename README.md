@@ -1,4 +1,8 @@
-# Code and data for our paper Automatic Metrical Scansion of Galician Poetry: First Results
+# GAMA · Galician Metrical Analyzer · Symbolic 
+
+Our first system (symbolic) for metrical scansion in Galician, presented in the following work:
+
+> Pablo Ruiz Fabo, Pauline Moreau, Anxo Alonso Pérez. (2026). Automatic Metrical Scansion of Galician Poetry: First Results. To appear in *Proceedings of PROPOR - 17th International Conference on Computational Processing of Portuguese*
 
 ## Introduction
 
@@ -6,19 +10,21 @@ The system is in `src`. An example client that runs both preprocessing and scans
 
 From `src`, `run_prepro.py` runs preprocessing and `run_scan_eval.py` runs scansion. The  `-h` option shows available options. The instructions to reproduce results below also show examples how to use the tool.
 
-We share the paper's evaluation data ([test set](./src/scansion/eval/data/README.md)), annotation [criteria](./src/scansion/eval/data/annotation-criteria.md), and the procedure to reproduce results, for peer review. We will publicly distribute both test data and the larger development dataset once the work is accepted.
+We share the paper's evaluation data ([test set](./src/scansion/eval/data/README.md)), annotation [criteria](./src/scansion/eval/data/annotation-criteria.md), and the procedure to reproduce results.
+
+Note: This repository reproduces the initial submission. Some improvements done before the camera-ready are not here yet. 
 
 ### Setup
 
 Required packages are in [`requirements.txt`](./requirements.txt). 
 
-To run the system, large files that don't fit `anonymous.4open.science` would need to be downloaded. The following command downloads them to the required directory (script must be executable):
+To run the system, some large files that wouldn't fit without LFS need to be downloaded. The following command downloads them to the required directory (script must be executable):
 
 ```bash
 ./download_large_files.sh
 ```
 
-Then the system can be run and reproduces the paper. 
+Then the system can be run and reproduces the initial version of the paper. 
 
 ## Example
 
@@ -101,4 +107,4 @@ That will write the summary of results for the `test` part of Table 2 to `logs/l
 
 ### Per-meter results
 
-These are in **Appendix F, table 7**. They can be reproduced by running the notebook at `src/scansion/ana/per-meter-results.ipynb`, which uses the detailed evaluation above.
+These are in **Table 4**. They can be reproduced by running the notebook at `src/scansion/ana/per-meter-results.ipynb`, which uses the detailed evaluation above.
