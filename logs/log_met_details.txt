@@ -1,0 +1,25 @@
+# Batch ID: 202 [Gumper]
+
+Comment: repro detailed eval 200
+
+Eval items: ../out/scansion_gl_eval_202.tsv
+Original data file: scansion/eval/data/gl_scansion_gold_test_md_010.xlsx
+Eval items analyzed: ../out/scansion_gl_eval_202.annot.tsv
+Number of items evaluated: 800
+
+Exact matches:                	0/800 (0.00%)
+Vowel matches:                	0/800 (0.00%)
+Stress pattern matches:       	647/800 (80.88%)
+Syllable segmentation matches:	0/800 (0.00%)
+Meter matches:                	746/800 (93.25%)
+
+Exact match stats per line type:
+has_synalepha:                	302/395	(76.46% of 49.38%)
+has_dialepha:                 	 21/ 32	(65.62% of 4.00%)
+has_syneresis:                	 25/ 34	(73.53% of 4.25%)
+has_dieresis:                 	  5/  8	(62.50% of 1.00%)
+has_slph_across_punctuation:  	 22/ 30	(73.33% of 3.75%)
+has_complex_slph:             	  7/  9	(77.78% of 1.12%)
+has_no_diphth_across_word_b:  	 15/ 27	(55.56% of 3.38%)
+
+
