@@ -4,6 +4,8 @@ Our first system (symbolic) for metrical scansion in Galician, presented in the 
 
 > Pablo Ruiz Fabo, Pauline Moreau, Anxo Alonso Pérez. (2026). Automatic Metrical Scansion of Galician Poetry: First Results. To appear in *Proceedings of PROPOR - 17th International Conference on Computational Processing of Portuguese*
 
+A web interface using the system is deployed at https://prf2.org/gama/.
+
 ## Introduction
 
 The system is in `src`. An example client that runs both preprocessing and scansion on a text is at `src/run_clients.sh`.
