@@ -2,9 +2,11 @@
 
 Our first system (symbolic) for metrical scansion in Galician, presented in the following work:
 
-> Pablo Ruiz Fabo, Pauline Moreau, Anxo Alonso Pérez. (2026). Automatic Metrical Scansion of Galician Poetry: First Results. To appear in *Proceedings of PROPOR - 17th International Conference on Computational Processing of Portuguese*
+> Pablo Ruiz Fabo, Pauline Moreau, Anxo Alonso Pérez. (2026). Automatic Metrical Scansion of Galician Poetry: First Results. In *Proceedings of the 17th International Conference on Computational Processing of Portuguese (PROPOR 2026) - Vol. 1*, pp. 994–1004, Salvador, Brazil. Association for Computational Linguistics. https://aclanthology.org/2026.propor-1.101/
 
 A web interface using the system is deployed at https://prf2.org/gama/.
+
+**Newer version:** A later version of the system, installable with pip and with a command line and Python interface, is at [compellit/gama](https://github.com/compellit/gama). It reproduces the published results (see its [evaluation](https://github.com/compellit/gama/tree/main/evaluation)).
 
 ## Introduction
 
@@ -12,7 +14,7 @@ The system is in `src`. An example client that runs both preprocessing and scans
 
 From `src`, `run_prepro.py` runs preprocessing and `run_scan_eval.py` runs scansion. The  `-h` option shows available options.
 
-Note: This repository corresponds to the initial submission. Some improvements done before the camera-ready are not here yet. 
+Note: This repository corresponds to the initial submission. Some improvements done before the camera-ready are not here; they are in [compellit/gama](https://github.com/compellit/gama), which reproduces the camera-ready results. 
 
 ### Setup
 
